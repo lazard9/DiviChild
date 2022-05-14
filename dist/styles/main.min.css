@@ -1,0 +1,325 @@
+/** Theme Styles **/
+#lgb_sticky_nav {
+  transition: top 320ms ease-in-out; }
+  #lgb_sticky_nav.sticky {
+    top: 15px; }
+    @media only screen and (min-width: 981px) and (max-width: 1660px) {
+      #lgb_sticky_nav.sticky {
+        top: 55px; } }
+    #lgb_sticky_nav.sticky .lgbcoin_icons_header > div {
+      box-shadow: 0 4px 12px rgba(98, 113, 166, 0.3); }
+
+body.logged-in.admin-bar #lgb_sticky_nav.sticky {
+  top: calc(15px + 32px); }
+  @media only screen and (min-width: 981px) and (max-width: 1660px) {
+    body.logged-in.admin-bar #lgb_sticky_nav.sticky {
+      top: calc(55px + 32px); } }
+
+.news-posts__container {
+  display: grid;
+  grid-row-gap: 40px; }
+  @media all and (min-width: 768px) {
+    .news-posts__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+      grid-column-gap: 30px; } }
+  @media all and (min-width: 1200px) {
+    .news-posts__container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 45px;
+      grid-row-gap: 60px; } }
+.news-posts__pagination {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto;
+  position: relative; }
+.news-posts__pagination .page-numbers {
+  color: #fff;
+  font-family: 'Museo Sans W05_900',Helvetica,Arial,Lucida,sans-serif !important;
+  width: 55px;
+  height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20357d !important;
+  border-radius: 5px;
+  margin-right: calc( 5px/2);
+  margin-left: calc( 5px/2 );
+  transition: background 320ms ease-in-out; }
+.news-posts__pagination span.page-numbers,
+.news-posts__pagination .page-numbers:hover {
+  background-color: #c41f1f !important; }
+.news-posts__pagination .next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px; }
+.news-posts__pagination .prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px; }
+
+.news-post {
+  overflow: hidden; }
+  @media all and (min-width: 768px) {
+    .news-post:first-of-type {
+      grid-column: 1 / -1;
+      display: flex; }
+      .news-post:first-of-type .news-post__thumbnail__link {
+        width: 52%;
+        margin-right: 5%;
+        margin-bottom: 0; }
+      .news-post:first-of-type .news-post__text {
+        width: 43%; } }
+  .news-post__thumbnail__link {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    overflow: hidden; }
+  .news-post__thumbnail {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden; }
+    .news-post__thumbnail img {
+      height: auto;
+      position: absolute;
+      top: calc(50% + 1px);
+      left: calc(50% + 1px);
+      transform: scale(1.01) translate(-50%, -50%);
+      display: block;
+      width: 100%;
+      max-height: none;
+      max-width: none;
+      transition: filter .3s,-webkit-filter .3s; }
+  .news-post__text {
+    padding-top: 10px;
+    position: relative; }
+  .news-post__social-twitter {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 14px;
+    color: #20357d !important;
+    line-height: 1.1em;
+    background-color: #ABB6DB;
+    display: inline-flex;
+    padding: 0.65em 2.75em;
+    border-radius: 52px;
+    margin-bottom: 15px;
+    transition: background 320ms ease-in-out; }
+    @media only screen and (min-width: 981px) {
+      .news-post__social-twitter {
+        font-size: 16px; } }
+  .news-post__title a {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 28px;
+    color: #20357d;
+    font-size: 18px; }
+  .news-post__excerpt p {
+    font-family: 'Museo Sans W05_900' !important;
+    font-size: 18px !important;
+    line-height: 1.3em;
+    font-size: 14px;
+    color: #20357d; }
+    @media all and (min-width: 981px) {
+      .news-post__excerpt p {
+        font-size: 24px !important; } }
+  .news-post__read-more {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff !important;
+    line-height: 1.1em;
+    background-color: #20357d;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 1em 2em;
+    border-radius: 52px;
+    margin-top: 15px;
+    transition: background 320ms ease-in-out; }
+    @media all and (min-width: 981px) {
+      .news-post__read-more {
+        font-size: 16px; } }
+    .news-post__read-more:hover {
+      background-color: #c41f1f; }
+
+#mc4wp-form-1 .mc4wp-form__email input[type="email"] {
+  font-family: 'Museo Sans W05_500';
+  font-size: 28px;
+  line-height: 1.4;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 32px !important;
+  width: 100%; }
+  #mc4wp-form-1 .mc4wp-form__email input[type="email"]::placeholder {
+    color: #F56969;
+    opacity: 1; }
+  @media screen and (max-width: 980px) {
+    #mc4wp-form-1 .mc4wp-form__email input[type="email"] {
+      font-size: 24px !important;
+      padding: 26px !important; } }
+  @media screen and (max-width: 767px) {
+    #mc4wp-form-1 .mc4wp-form__email input[type="email"] {
+      font-size: 20px !important;
+      padding: 20px !important; } }
+#mc4wp-form-1 .mc4wp-form__submit {
+  display: flex; }
+  @media screen and (max-width: 500px) {
+    #mc4wp-form-1 .mc4wp-form__submit {
+      flex-wrap: wrap; } }
+  #mc4wp-form-1 .mc4wp-form__submit input[type="submit"] {
+    font-family: 'Museo Sans W05_700';
+    color: #c41f1f;
+    background: #fff;
+    font-size: 32px;
+    line-height: 1.1 !important;
+    border-radius: 52px;
+    padding: 28px 10px !important;
+    transition: all 320ms ease-in-out;
+    text-transform: uppercase;
+    border: 0;
+    flex-basis: 50%; }
+    @media screen and (max-width: 980px) {
+      #mc4wp-form-1 .mc4wp-form__submit input[type="submit"] {
+        font-size: 28px !important;
+        padding: 24px 10px !important; } }
+    @media screen and (max-width: 767px) {
+      #mc4wp-form-1 .mc4wp-form__submit input[type="submit"] {
+        font-size: 24px !important;
+        padding: 20px 10px !important; } }
+    @media screen and (max-width: 500px) {
+      #mc4wp-form-1 .mc4wp-form__submit input[type="submit"] {
+        flex-basis: 100%;
+        margin-bottom: 10px; } }
+    #mc4wp-form-1 .mc4wp-form__submit input[type="submit"]:hover {
+      color: #fff;
+      background: #20357d; }
+#mc4wp-form-1 .mc4wp-form__disclaimer {
+  font-family: 'Museo Sans W05_500';
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  flex-basis: 50%;
+  padding-left: 15px; }
+  @media screen and (max-width: 980px) {
+    #mc4wp-form-1 .mc4wp-form__disclaimer {
+      font-size: 13px !important; } }
+  @media screen and (max-width: 500px) {
+    #mc4wp-form-1 .mc4wp-form__disclaimer {
+      flex-basis: 100%; } }
+#mc4wp-form-1 .mc4wp-alert {
+  color: #333;
+  font-family: 'Museo Sans W05_700';
+  font-size: 22px;
+  margin-top: 20px; }
+  @media screen and (max-width: 500px) {
+    #mc4wp-form-1 .mc4wp-alert {
+      font-size: 18px; } }
+#mc4wp-form-1 .mc4wp-success {
+  color: #d8ca82;
+  font-size: 22px;
+  font-family: 'Museo Sans W05_700';
+  margin-top: 20px; }
+  @media screen and (max-width: 500px) {
+    #mc4wp-form-1 .mc4wp-success {
+      font-size: 18px; } }
+
+.lgbc_mailpoet_form #mailpoet_form_1 form.mailpoet_form {
+  padding: 0; }
+
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+  font-family: 'Museo Sans W05_500';
+  font-size: 28px;
+  line-height: 1.4;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 32px !important; }
+
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text::placeholder {
+  color: #F56969;
+  opacity: 1; }
+
+@media screen and (max-width: 980px) {
+  body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+    font-size: 24px !important;
+    padding: 26px !important; } }
+@media screen and (max-width: 767px) {
+  body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+    font-size: 20px !important;
+    padding: 20px !important; } }
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+  font-family: 'Museo Sans W05_700';
+  color: #c41f1f;
+  background: #fff;
+  font-size: 32px;
+  line-height: 1.1 !important;
+  border-radius: 52px;
+  padding: 28px 10px !important;
+  transition: all 320ms ease-in-out;
+  text-transform: uppercase; }
+
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit:hover {
+  color: #fff;
+  background: #20357d; }
+
+@media screen and (max-width: 980px) {
+  body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+    font-size: 28px !important;
+    padding: 24px 10px !important; } }
+@media screen and (max-width: 767px) {
+  body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+    font-size: 24px !important;
+    padding: 20px 10px !important; } }
+.lgbc_mailpoet_form .mailpoet_form_paragraph {
+  font-family: 'Museo Sans W05_500';
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff; }
+
+@media screen and (max-width: 980px) {
+  body .lgbc_mailpoet_form .mailpoet_form_paragraph {
+    font-size: 13px !important; } }
+.lgbc_mailpoet_form .parsley-custom-error-message {
+  color: #333;
+  font-family: 'Museo Sans W05_700';
+  font-size: 16px; }
+
+.lgbc_mailpoet_form .mailpoet_message .mailpoet_validate_success {
+  color: #d8ca82;
+  font-size: 20px;
+  font-family: 'Museo Sans W05_700'; }
+
+.lgbc_mailpoet_form .mailpoet_message .mailpoet_validate_error {
+  color: #333;
+  font-size: 20px;
+  font-family: 'Museo Sans W05_700'; }
+
+/* WPForms */
+.lgb_wpforms_simple .wpforms-submit-container .wpforms-submit {
+  font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+  text-transform: uppercase;
+  font-size: 16px !important;
+  color: #fff !important;
+  line-height: 1.1em;
+  background-color: #20357d !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1em 3em !important;
+  border-radius: 52px;
+  border-color: #20357d !important;
+  transition: all 320ms ease-in-out; }
+  .lgb_wpforms_simple .wpforms-submit-container .wpforms-submit:hover {
+    background-color: #c41f1f !important;
+    border-color: #c41f1f !important; }
+
+/*# sourceMappingURL=main.min.css.map */

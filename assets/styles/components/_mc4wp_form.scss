@@ -1,0 +1,111 @@
+#mc4wp-form-1 {
+    .mc4wp-form {
+        &__email input[type="email"] {
+            font-family: 'Museo Sans W05_500';
+            font-size: 28px;
+            line-height: 1.4;
+            border: 2px solid #fff;
+            background: transparent;
+            color: #fff;
+            padding: 32px !important;
+            width: 100%;
+
+            &::placeholder {
+                color: #F56969;
+                opacity: 1;
+            }
+
+            @media screen and (max-width: 980px) {
+                font-size: 24px !important;
+                padding: 26px !important;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 20px !important;
+                padding: 20px !important;
+            }
+        }
+
+
+        &__submit {
+            display: flex;
+
+            @media screen and (max-width: 500px) {
+                flex-wrap: wrap;
+            }  
+            
+            input[type="submit"] {
+                font-family: 'Museo Sans W05_700';
+                color: #c41f1f;
+                background: #fff;
+                font-size: 32px;
+                line-height: 1.1 !important;
+                border-radius: 52px;
+                padding: 28px 10px !important;
+                transition: all 320ms ease-in-out;
+                text-transform: uppercase;
+                border: 0;
+                flex-basis: 50%;
+        
+                @media screen and (max-width: 980px) {
+                    font-size: 28px !important;
+                    padding: 24px 10px !important;
+                }
+        
+                @media screen and (max-width: 767px) {
+                    font-size: 24px !important;
+                    padding: 20px 10px !important;
+                }
+
+                @media screen and (max-width: 500px) {
+                        flex-basis: 100%;
+                        margin-bottom: 10px;
+                }
+        
+                &:hover {
+                    color: #fff;
+                    background: #20357d;
+                }
+            }
+        }
+    }
+
+    .mc4wp-form__disclaimer {
+        font-family: 'Museo Sans W05_500';
+        font-size: 16px;
+        line-height: 1.25;
+        color: #fff;
+        flex-basis: 50%;
+        padding-left: 15px;
+
+        @media screen and (max-width: 980px) {
+            font-size: 13px !important;
+        }
+
+        @media screen and (max-width: 500px) {
+            flex-basis: 100%;
+        }
+    }
+
+    .mc4wp-alert {
+    color: #333;
+        font-family: 'Museo Sans W05_700';
+        font-size: 22px;
+        margin-top: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+        }
+    }
+
+    .mc4wp-success {
+        color: #d8ca82;
+        font-size: 22px;
+        font-family: 'Museo Sans W05_700';
+        margin-top: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+        }
+    }
+}

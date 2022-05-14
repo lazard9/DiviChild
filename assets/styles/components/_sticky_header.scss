@@ -1,0 +1,23 @@
+#lgb_sticky_nav {
+    transition: top 320ms ease-in-out;
+    
+    &.sticky {
+	    top: 15px;
+
+        @media only screen and (min-width: 981px) and (max-width: 1660px) {
+            top: 55px;
+        }
+
+        .lgbcoin_icons_header > div {
+            box-shadow: 0 4px 12px rgba(98, 113, 166, 0.3);
+        }
+    }
+}
+
+body.logged-in.admin-bar #lgb_sticky_nav.sticky {
+	top: calc(15px + 32px);
+
+    @media only screen and (min-width: 981px) and (max-width: 1660px) {
+        top: calc(55px + 32px);
+    }
+}

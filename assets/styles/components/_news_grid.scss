@@ -1,0 +1,180 @@
+.news-posts {
+  &__container {
+    display: grid;
+    grid-row-gap: 40px;
+
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+      grid-column-gap: 30px;
+    }
+
+    @media all and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 45px;
+      grid-row-gap: 60px;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto;
+    position: relative;
+  }
+
+  &__pagination .page-numbers {
+    color: #fff;
+    font-family: 'Museo Sans W05_900',Helvetica,Arial,Lucida,sans-serif !important;
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20357d !important;
+    border-radius: 5px;
+    margin-right: calc( 5px/2);
+    margin-left: calc( 5px/2 );
+    transition: background 320ms ease-in-out;
+  }
+
+  &__pagination {
+    span.page-numbers,
+    .page-numbers:hover {
+      background-color: #c41f1f !important;
+    }
+
+    .next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 24px;
+    }
+
+    .prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 24px;
+    }
+  }
+}
+
+.news-post {
+	overflow: hidden;
+
+  @media all and (min-width: 768px) {
+    &:first-of-type {
+      grid-column: 1 / -1;
+      display: flex;
+
+      .news-post__thumbnail__link {
+        width: 52%;
+        margin-right: 5%;
+        margin-bottom: 0;
+      }
+
+      .news-post__text {
+        width: 43%;
+      }
+    }
+  }
+
+  &__thumbnail__link {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  &__thumbnail {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      position: absolute;
+      top: calc(50% + 1px);
+      left: calc(50% + 1px);
+      transform: scale(1.01) translate(-50%,-50%);
+      display: block;
+      width: 100%;
+      max-height: none;
+      max-width: none;
+      transition: filter .3s,-webkit-filter .3s;
+    }
+  }
+
+  &__text {
+    padding-top: 10px;
+    position: relative;
+  }
+
+  &__social-twitter {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 14px;
+    color: #20357d !important;
+    line-height: 1.1em;
+    background-color: #ABB6DB;
+    display: inline-flex;
+    padding: 0.65em 2.75em;
+    border-radius: 52px;
+    margin-bottom: 15px;
+    transition: background 320ms ease-in-out;
+
+    @media only screen and (min-width: 981px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title a {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 28px;
+    color: #20357d;
+    font-size: 18px;
+  }
+
+  &__excerpt p {
+    font-family: 'Museo Sans W05_900' !important;
+    font-size: 18px !important;
+    line-height: 1.3em ;
+    font-size: 14px;
+    color: #20357d;
+
+    @media all and (min-width: 981px) {
+      font-size: 24px !important;
+    }
+  }
+
+  &__read-more {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff !important;
+    line-height: 1.1em;
+    background-color: #20357d;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 1em 2em;
+    border-radius: 52px;
+    margin-top: 15px;
+    transition: background 320ms ease-in-out;
+
+    @media all and (min-width: 981px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #c41f1f; 
+    }
+  }
+}

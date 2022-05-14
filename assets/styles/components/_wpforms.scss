@@ -1,0 +1,21 @@
+/* WPForms */
+.lgb_wpforms_simple .wpforms-submit-container .wpforms-submit {
+    font-family: 'Museo Sans W05_500',Helvetica,Arial,Lucida,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    color: #fff !important;
+    line-height: 1.1em;
+    background-color: #20357d !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 1em 3em !important;
+    border-radius: 52px;
+    border-color: #20357d !important;
+    transition: all 320ms ease-in-out;
+
+    &:hover {
+        background-color: #c41f1f !important;
+        border-color: #c41f1f !important;
+    }
+}

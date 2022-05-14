@@ -1,0 +1,86 @@
+.lgbc_mailpoet_form #mailpoet_form_1 form.mailpoet_form {
+    padding: 0;
+}
+
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+	font-family: 'Museo Sans W05_500';
+	font-size: 28px;
+	line-height: 1.4;
+	border: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+	padding: 32px !important;
+}
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text::placeholder {
+	color: #F56969;
+	opacity: 1;
+}
+@media screen and (max-width: 980px) {
+	body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+	font-size: 24px !important;
+	padding: 26px !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_text {
+	font-size: 20px !important;
+	padding: 20px !important;
+	}
+}
+
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+	font-family: 'Museo Sans W05_700';
+	color: #c41f1f;
+	background: #fff;
+	font-size: 32px;
+	line-height: 1.1 !important;
+	border-radius: 52px;
+	padding: 28px 10px !important;
+	transition: all 320ms ease-in-out;
+	text-transform: uppercase;
+}
+.lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit:hover {
+	color: #fff;
+	background: #20357d;
+}
+@media screen and (max-width: 980px) {
+	body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+		font-size: 28px !important;
+		padding: 24px 10px !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	body .lgbc_mailpoet_form .mailpoet_paragraph .mailpoet_submit {
+		font-size: 24px !important;
+		padding: 20px 10px !important;
+	}
+}
+
+.lgbc_mailpoet_form .mailpoet_form_paragraph {
+	font-family: 'Museo Sans W05_500';
+	font-size: 16px;
+	line-height: 1.25;
+	color: #fff;
+}
+@media screen and (max-width: 980px) {
+	body .lgbc_mailpoet_form .mailpoet_form_paragraph {
+		font-size: 13px !important;
+	}
+}
+
+.lgbc_mailpoet_form .parsley-custom-error-message {
+   color: #333;
+	font-family: 'Museo Sans W05_700';
+	font-size: 16px;
+}
+
+.lgbc_mailpoet_form  .mailpoet_message .mailpoet_validate_success {
+	color: #d8ca82;
+	font-size: 20px;
+	font-family: 'Museo Sans W05_700';
+}
+.lgbc_mailpoet_form  .mailpoet_message .mailpoet_validate_error {
+	color: #333;
+	font-size: 20px;
+	font-family: 'Museo Sans W05_700';
+}
