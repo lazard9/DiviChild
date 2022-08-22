@@ -52,23 +52,23 @@ function lgbc_create_shortcode_news_post_type() {
         $returnposts_html .= '</div>';
 
         $total_pages = $custom_query->max_num_pages;
-		if ($total_pages > 1) {
+	if ($total_pages > 1) {
             
-			$current_page = max(1, get_query_var('paged'));
+		$current_page = max(1, get_query_var('paged'));
 
-            $posts_pagination = '<div class="news-posts__pagination">';
-			$posts_pagination .= paginate_links(array(
-				'base' => get_pagenum_link(1) . '%_%',
-				'format' => '/page/%#%',
-				'current' => $current_page,
-				'total' => $total_pages,
-				'prev_text'    => __('&#8249;'),
-				'next_text'    => __('&#8250;'),
-				'add_args'  => array(),
-                'prev_next' => true
-			));
-            $posts_pagination .= '</div>';
-		}
+		$posts_pagination = '<div class="news-posts__pagination">';
+		$posts_pagination .= paginate_links(array(
+			'base' => get_pagenum_link(1) . '%_%',
+			'format' => '/page/%#%',
+			'current' => $current_page,
+			'total' => $total_pages,
+			'prev_text'    => __('&#8249;'),
+			'next_text'    => __('&#8250;'),
+			'add_args'  => array(),
+			'prev_next' => true
+		));
+		$posts_pagination .= '</div>';
+	}
 
         $returnposts_html .= $posts_pagination;
 
