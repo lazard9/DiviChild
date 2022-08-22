@@ -21,8 +21,8 @@ function cpt_news_register() {
     $args = array(
         'label'                 => __( 'News', 'lgbcoin' ),
         'labels'                => $labels,
-        'supports'           => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-		'hierarchical'          => false,
+        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+	'hierarchical'          => false,
         'public'                => false,  // it's not public, it shouldn't have it's own permalink, and so on
         'publicly_queryable'    => false,  // you should be able to query it
         'show_ui'               => true,  // you should be able to edit it in wp-admin
@@ -30,7 +30,7 @@ function cpt_news_register() {
         'show_in_nav_menus'     => false,  // you shouldn't be able to add it to menus
         'has_archive'           => false,  // it shouldn't have archive page
         'description'           => 'News custom post type.',
-		'rewrite'               => array( 'slug' => 'news' ),
+	'rewrite'               => array( 'slug' => 'news' ),
         'show_in_menu'          => true,
         'menu_icon'             => 'dashicons-media-document',
         'menu_position'         => 4,
