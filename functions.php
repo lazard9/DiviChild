@@ -22,11 +22,11 @@ function lgbcoin_scripts() {
 add_action( 'wp_enqueue_scripts', 'lgbcoin_scripts' );
 
 /**
- * Various shortcodes
- */
-require_once get_stylesheet_directory() . '/inc/shortcode.php';
-
-/**
  * Custom post type News
  */
 require_once get_stylesheet_directory() . '/inc/custom-post-type.php';
+
+/**
+ * Shortcode to Display News Post Type
+ */
+require_once get_stylesheet_directory() . '/inc/shortcode.php';
